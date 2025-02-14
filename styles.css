@@ -3,43 +3,48 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    text-align: center;
+    color: #333;
 }
-
 header {
-    background: #333;
+    background-color: #004466;
     color: white;
     padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
 }
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-    nav ul li {
-        display: inline;
-        margin: 0 15px;
-    }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
 section {
-    padding: 50px;
     background: white;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background: #333;
-    color: white;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.profile-pic {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 80px; /* 控制圖片大小 */
+    height: 80px;
+    border-radius: 50%; /* 讓圖片變圓形 */
+    border: 3px solid white; /* 加邊框提升可視性 */
+    object-fit: cover; /* 確保圖片不會變形 */
+}
+
+h2 {
+    color: #004466;
+    border-bottom: 2px solid #004466;
+    padding-bottom: 5px;
+}
+p {
+    line-height: 1.6;
+}
+a {
+    color: #004466;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
